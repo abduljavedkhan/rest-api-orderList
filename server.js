@@ -7,7 +7,7 @@ const helmet = require("helmet");
 
 const corsOptions = {
   origin: "*",
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST","PATCH"],
   allowedHeaders: ["Access-Control-Allow-Origin", "Content-Type"],
 };
 app.use(helmet());
