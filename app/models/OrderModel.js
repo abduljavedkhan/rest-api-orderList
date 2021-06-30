@@ -35,4 +35,31 @@ Order.getAllOrders = (result) => {
   });
 };
 
+//get all orders
+Order.getOrderById = (id, result) => {
+  console.log("Model: GET Order By Id " + id);
+  connectionPool.query(QUERY.ORDER_BY_ID, [id], (err, res) => {
+    if (err) {
+      result(err, null);
+    } else {
+      result(null, res);
+    }
+  });
+};
+
+//update orders
+Order.updateOrderById = (reqParams, result) => {
+  connectionPool.query(
+    QUERY.UPDATE_ORDER,
+    [{ quantity: reqParams.quantity, status: reqParams.status }, reqParams.id],
+    (err, res) => {
+      if (err) {
+        result(err, null);
+      } else {
+        result(null, res);
+      }
+    }
+  );
+};
+
 module.exports = { Order };

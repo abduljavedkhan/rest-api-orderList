@@ -51,6 +51,44 @@ exports.getOrders = (req, res) => {
   });
 };
 
+//get orders by id
+exports.getOrderById = (req, res) => {
+  const id = req.params.id;
+  Order.getOrderById(id, (err, result) => {
+    console.log("Controller: GET Order By Id ");
+    if (err) {
+      console.log("error " + err.message);
+      res.status(500).json({
+        status: "error",
+        message: "Unable To Fetch order records",
+      });
+    } else {
+      res.status(200).json(result);
+    }
+  });
+};
+
+//update order by id
+exports.updateOrderById = (req, res) => {
+  const reqParams = {
+    id: req.params.id,
+    quantity: req.body.quantity,
+    status: req.body.status,
+  };
+  Order.updateOrderById(reqParams, (err, result) => {
+    console.log("Controller: PATCH Order By Id ");
+    if (err) {
+      console.log("error " + err.message);
+      res.status(500).json({
+        status: "error",
+        message: "Unable To Update Order",
+      });
+    } else {
+      res.status(200).json(result);
+    }
+  });
+};
+
 exports.addOrders = (req, res) => {
   if (
     !validateRequest([
