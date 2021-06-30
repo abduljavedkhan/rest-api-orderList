@@ -1,5 +1,15 @@
 # rest-api-orderList
 Live Hosted URL: https://rest-api-orderlist.herokuapp.com/
+
+```
+---------------------------------------------------
+```
+
+Front-end Git Repo: [Link](https://github.com/abduljavedkhan/orderList-front-end/tree/master)
+
+Front-end Live Hosted URL: http://orderlist-frontend.herokuapp.com/
+
+
 ### Setup
 ```
 npm install
@@ -46,6 +56,3 @@ Response:
 
 ![image](https://user-images.githubusercontent.com/44355278/123934640-1d5cec80-d9b1-11eb-9255-6f5485541591.png)
 
-
-
-[FE Project Link:](https://github.com/abduljavedkhan/orderList-front-end/tree/master)
