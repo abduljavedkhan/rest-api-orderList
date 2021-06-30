@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require("./app/routes/approutes")(app);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to fast finger backend." });
+  res.json({ message: "Welcome to Order List backend." });
 });
 
 app.use(function (err, req, res, next) {
