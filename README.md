@@ -5,7 +5,7 @@ Live Hosted URL: https://rest-api-orderlist.herokuapp.com/
 ---------------------------------------------------
 ```
 
-Front-end Git Repo: [Link](https://github.com/abduljavedkhan/orderList-front-end/tree/master)
+Front-end Repo: [Link](https://github.com/abduljavedkhan/orderList-front-end/tree/master)
 
 Front-end Live Hosted URL: http://orderlist-frontend.herokuapp.com/
 
