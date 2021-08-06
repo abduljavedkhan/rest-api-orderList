@@ -6,9 +6,6 @@
 
 Front-end Repo: [Link](https://github.com/abduljavedkhan/orderList-front-end/tree/master)
 
-Front-end Live Hosted URL: http://orderlist-frontend.herokuapp.com/
-
-
 ### Setup
 ```
 npm install
